@@ -1,0 +1,149 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0055A4; /* Azul Disney */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #FFD700; /* Dourado Disney */
+}
+
+/* Mapa Interativo */
+.mapa-section {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.mapa-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.mapa-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mapa-container li {
+    margin: 15px 0;
+}
+
+.mapa-container a {
+    text-decoration: none;
+    color: #0055A4;
+    font-weight: bold;
+}
+
+.mapa-container a:hover {
+    color: #FFD700;
+}
+
+/* Tour Virtual */
+.tour-virtual-section {
+    background-color: #fafafa;
+    padding: 50px;
+    text-align: center;
+}
+
+.tour-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.tour-item {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    width: 550px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tour-video iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.maps-link p {
+    margin-top: 10px;
+}
+
+.maps-link a {
+    color: #0055A4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.maps-link a:hover {
+    color: #FFD700;
+}
+
+/* Seção Dicas */
+.dicas-section {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.dicas-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dicas-section li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.dicas-section strong {
+    color: #0055A4;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

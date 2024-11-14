@@ -1,0 +1,251 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Waltograph';
+    src: url('./fonts/waltograph42.otf') format('woff2'),
+         url('./fonts/waltograph42.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Waltograph', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    background-image: url('images/disney-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2b4b93;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+header .logo img {
+    width: 150px;  /* Ajuste o valor para o tamanho que preferir */
+    height: auto;  /* Mantém a proporção da imagem */
+}
+
+
+header h1 {
+    font-family: 'Waltograph', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+#princesas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+#princesas h2 {
+    font-size: 3.5rem;
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 50px;
+}
+
+
+.princesa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.princesa-img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.princesa:hover .princesa-img {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); 
+}
+
+.biografia {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Exibe os itens em linha (lado a lado) */
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os itens */
+    padding: 0;
+    margin: 0;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+
+#login-cadastro {
+    text-align: center;
+    margin-top: 100px;
+    flex-grow: 1;
+}
+
+button {
+    background-color: #f8a51d;
+    color: #000000;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2.0rem;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Waltograph', sans-serif;  /* Fonte Waltograph para os botões */
+}
+
+button:hover {
+    background-color: #ffbb33;
+    transform: scale(1.05);
+}
+
+form input {
+    padding: 15px;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #ffffffcc;
+    color: #333;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form input:focus {
+    background-color: #ffe7a7;
+    border-color: #f8a51d;
+}
+
+footer {
+    text-align: center;
+    margin-top: 300px;
+    padding: 20px;
+    background-color: #1d2d50;
+    color: #f8a51d;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+footer a {
+    color: #f8a51d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffe7a7;
+}
+
+#home h2 {
+    font-family: 'Waltograph', sans-serif;
+    font-size: 3.5rem; 
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-top: 50px; 
+}
+
+#home p {
+    font-family: 'Waltograph', sans-serif;
+    font-size: 1.8rem;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    height: calc(100vh - 80px); 
+}
+
+
+.jesus {
+    display: block;
+    font-size: 3.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.disney{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.formlogin{
+    display: block;
+    font-size: 3.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
+}
+
+.cadastro{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
+}

@@ -1,0 +1,171 @@
+/* Fonte personalizada */
+@font-face {
+    font-family: 'Waltograph';
+    src: url('./fonts/waltograph42.otf') format('woff2'),
+         url('./fonts/waltograph42.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilo geral do corpo e fundo */
+body {
+    font-family: sans-serif; /* Removendo a fonte Waltograph do corpo */
+    background-color: #f3f3f3; /* Cor de fundo suave */
+    color: #ffffff80; /* Cor de texto escuro */
+    background-image: url('https://www.bing.com/rp/1T01SbdKjzjkWYn7g-m0ioVgoPc.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobertura total da tela */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 0%;
+}
+
+/* Aplica a fonte Waltograph apenas aos títulos das seções */
+.curiosidades-section h1,
+.bastidores-section h1 {
+    font-family: 'Waltograph', sans-serif; /* Fonte personalizada para os títulos */
+    font-weight: normal;
+    color: #1C4E80; /* Azul Disney */
+    text-align: center;
+}
+
+/* Seção de Bastidores */
+.bastidores-section {
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 8px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 40px;
+}
+
+/* Títulos e textos dentro da seção de Bastidores */
+.bastidores-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(197, 11, 11, 0.4); /* Efeito de sombra para o título */
+}
+
+.bastidores-section p {
+    font-size: 1.2rem;
+    color: #d40000;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/* Seção de Curiosidades */
+.curiosidades-section h1 {
+    font-family: 'Waltograph', sans-serif; /* Fonte personalizada para os títulos */
+    font-size: 2.5rem;
+    color: #1C4E80; /* Azul Disney */
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Efeito de sombra para o título */
+}
+
+.curiosidades-section p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/* Resto do estilo do corpo sem a fonte Waltograph */
+.bastidores-section img,
+.bastidores-section video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #F3F3F3; /* Borda suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover nas imagens/vídeos */
+}
+
+.bastidores-section img:hover,
+.bastidores-section video:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Sombra ao passar o mouse */
+}
+
+/* Seção de Depoimentos */
+.bastidores-depoimentos {
+    margin-top: 30px;
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.bastidores-depoimentos h2 {
+    font-size: 2rem;
+    color: #D32F2F; /* Vermelho Disney */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra no título */
+}
+
+.bastidores-depoimentos p {
+    font-size: 1.1rem;
+    color: #666666;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Estilo do botão de "Veja Mais" */
+.bastidores-interacao {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bastidores-interacao a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1C4E80; /* Azul Disney */
+    border: 2px solid #1C4E80;
+    border-radius: 8px;
+    padding: 10px 30px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease;
+}
+
+.bastidores-interacao a:hover {
+    background-color: #F8A51D; /* Laranja ao passar o mouse */
+    color: #FFFFFF;
+    transform: scale(1.05); /* Efeito de aumento do botão */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .bastidores-section {
+        padding: 25px 15px;
+    }
+
+    .bastidores-section h1 {
+        font-size: 2rem;
+    }
+
+    .bastidores-section p {
+        font-size: 1.1rem;
+    }
+
+    .bastidores-depoimentos h2 {
+        font-size: 1.8rem;
+    }
+
+    .bastidores-depoimentos p {
+        font-size: 1rem;
+    }
+
+    .bastidores-interacao a {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+}
